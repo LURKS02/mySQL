@@ -27,8 +27,10 @@ CREATE TABLE `offer` (
   `name` varchar(45) DEFAULT NULL,
   `email` varchar(45) DEFAULT NULL,
   `text` tinytext,
+  `number` int DEFAULT NULL,
+  `state` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -37,7 +39,7 @@ CREATE TABLE `offer` (
 
 LOCK TABLES `offer` WRITE;
 /*!40000 ALTER TABLE `offer` DISABLE KEYS */;
-INSERT INTO `offer` VALUES (1,'user','user@email.com','text'),(2,'user2','user2@email.com','text2'),(3,'newuser','new@email.com','text3');
+INSERT INTO `offer` VALUES (1,'user','user@email.com','text',NULL,NULL),(2,'user2','user2@email.com','text2',NULL,NULL),(3,'newuser','new@email.com','text3',NULL,NULL);
 /*!40000 ALTER TABLE `offer` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -50,4 +52,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-06-09 17:31:27
+-- Dump completed on 2020-06-12 23:11:14
